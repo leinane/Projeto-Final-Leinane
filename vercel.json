@@ -1,0 +1,17 @@
+{
+    "bilds":[
+        {
+            "src": "./src/app.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"./src/app.js",
+            "methodos":[
+                "GET","POST","DELETE","PATCH", "PUT","OPTIONS"
+            ]
+        }
+    ]
+}
