@@ -20,9 +20,9 @@ Para fazer o cadrastro do banco de dados, utilizei o CRUD.
 
 #### `[GET]`/postos/buscar
 
-retorna todos os postos do banco de dados
+Retorna todas unidade-de-saude do banco de dados
 
-> resposta: HTTP 200 OK
+> Resposta: HTTP 200 OK
 
 ```json
 [
@@ -55,7 +55,7 @@ retorna todos os postos do banco de dados
 
 #### `[GET]`/postos/buscar/{id}
 
-retorna o posto do id indicado
+Retorna uma unidade-de-saude do id indicado
 
 > Aceita como parametro de consulta
 
@@ -63,7 +63,7 @@ retorna o posto do id indicado
 | --------- | ----------- |
 | id        | id do posto |
 
-> resposta: HTTP 200 OK
+> Resposta: HTTP 200 OK
 
 ```json
 [
@@ -112,9 +112,9 @@ retorna o posto do id indicado
 
 #### `[POST]` /postos/create
 
-cadastra um Posto
+Cadastra uma unidade-de-sauda
 
-> resposta: HTTP 201 OK
+> Resposta: HTTP 201 OK
 
 Exemplo:
 
@@ -165,9 +165,9 @@ Exemplo:
 
 #### `[PUT]`/postos/atualizar/{id}
 
-Atualiza um posto
+Atualiza uma unidade-de-saude
 
-> resposta: HTTP 200 OK
+> Resposta: HTTP 200 OK
 
 ```json
 [
@@ -183,15 +183,15 @@ Atualiza um posto
 
 #### `[DELETE]`/postos/deletar/ {id}
 
-Deleta um Posto
+Deleta uma unidade-de-saude
 
-> É necessário o ID do Posto
+> É necessário o ID da unidade-desaude
 
 | Parametro | Descricao   |
 | --------- | ----------- |
 | id        | id do Posto |
 
-> resposta: HTTP 204 NO CONTENT
+> Resposta: HTTP 204 NO CONTENT
 
 ```json
 {}
@@ -199,10 +199,10 @@ Deleta um Posto
 
 ---
 
-### Arquitetura do projeto
+### Arquitetura do projeto - MVC
 
 ```
-MVC
+Projeto-Final
 📂 API
 ├─ 📂 src
 │  ├─ 📂 controllers
