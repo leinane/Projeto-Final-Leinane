@@ -12,7 +12,13 @@ Turma Online 18 - Todas em Tech | back-end | Semana 18 | 2022 | Aluna: Leinane S
   <img src="./assets/hospital.gif">
 </div>
 
-Mapeamento das unidade de saúde, da cidade de Santo Antônio de Jesus, Bahia. Neste projeto, irei desenvolver uma API para fazer o mapeamento dos postos de Saúde, da cidade de Santo Antônio de jesus, Bahia. Este projeto tem a finalidade de informar a população sobre o endereço dos postos de saúde atuantes na cidade, os atendimentos disponíveis, os médicos e enfermeiros que trabalham nnas unidades. Para a resolução deste projeto, irei desenvolver uma API RESt, que será conectada com o banco de dados mongobd, onde irá receber os dados dos postos, e de seus funcionários.
+Esse projeto tem como objetivo fazer o mapeamento das unidades de saúde da cidade de Santo Antônio de jesus, para que seja mais fácil o acesso da população a esses locais. Minha experiência como usuária ddestas unidades de saúde, trouxe a inquietação sobre a falta de informação que a população tem sobre essas unidades de saúde. Pois, para saber sobre os  atendimentos disponíveis, medicamentos e os médicos que atuam no local, as pessoas têm que se dirigir até o posto de saúde, que em alguns casos, nem o telefone  é divulgado para a população. A total falta de informação sobre esses postos, pode fazer com que algumas pessoas deixem de buscar pelos atendimentos disponíveis nesses locais. Com isso, o intuito do  projeto, é deixar as informações sobre as unidades de saúde, da cidade de Saj, mais acessível para a população santoantoniense.
+
+
+### Sobre a API 
+
+Neste projeto, irei desenvolver uma API restful, que será conectada com o banco de dados mongobd, onde irá receber os dados das unidades de saúde, de seus funcionários, os atendimentos realizados no local e os horários de atendimento. Esses dados ficam salvos no banco de dados e poderá ser acessado pelos usuários destas unidades de saúde, de forma online, via página web, que será implementada futuramente.
+
 
 ### Documentação
 
