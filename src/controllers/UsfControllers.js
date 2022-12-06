@@ -22,10 +22,8 @@ const createPostos = async(req, res) =>{
         res.status(201).json({
             posto: salvarPosto 
         })
-    } catch (error) {
-        res.status(400).json({
-            mensagem: error.message
-        })
+    } catch (err) {
+        res.status(500).send({message:"err"})
     }
 }
 
@@ -34,12 +32,12 @@ const getAll = async(req, res) =>{
     try {
         const postos = await postosSchema.find()
         res.status(200).send(postos)
-        res.status(200).json({
+        /*res.status(200).json({
             message:"Postos encontrados"
-        })
+        })*/
         
-    } catch (error) {
-        res.status(500).send({message:"error"})
+    } catch (err) {
+        res.status(500).send({message:"err"})
     }
         
 }
@@ -57,8 +55,8 @@ const getById = async(req, res) =>{
       }
 
         res.status(200).send(encontrarPosto)
-    } catch (error) {
-        res.status(500).send({message:"error"})
+    } catch (err) {
+        res.status(500).send({message:"err"})
     }
 }
 
@@ -72,8 +70,8 @@ const deletePosto = async(req, res) =>{
        await postoEncontrado.delete()
        res.status(200).json({mensagem:"Posto removido com sucesso!"})
 
-    } catch (error) {
-        res.status(400).json({message:"error"})
+    } catch (err) {
+        res.status(400).json({message:"err"})
     }
 }
 
@@ -103,8 +101,8 @@ const updateGenerico = async(req, res) =>{
             res.status(200).json({mensagem:"Posto atualizado com sucesso!"})
 
         
-    } catch (error) {
-        res.status(400).json({message:"error"})
+    } catch (err) {
+        res.status(400).json({message:"err"})
         
     }
 }
