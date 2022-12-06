@@ -20,7 +20,7 @@ Para fazer o cadrastro do banco de dados, utilizei o CRUD.
 
 #### `[GET]`/postos/buscar
 
-Retorna todas unidade-de-saude do banco de dados
+Retorna todas unidades-de-saúde do banco de dados
 
 > Resposta: HTTP 200 OK
 
@@ -55,11 +55,11 @@ Retorna todas unidade-de-saude do banco de dados
 
 #### `[GET]`/postos/buscar/{id}
 
-Retorna uma unidade-de-saude do id indicado
+Rota que retorna uma unidade-de-saúde do id indicado
 
-> Aceita como parametro de consulta
+> Aceita como parâmetro de consulta
 
-| Parametro | Descricao   |
+| Parâmetro | Descrição   |
 | --------- | ----------- |
 | id        | id do posto |
 
@@ -112,7 +112,7 @@ Retorna uma unidade-de-saude do id indicado
 
 #### `[POST]` /postos/create
 
-Cadastra uma unidade-de-sauda
+Cadastra uma unidade-de-saúde
 
 > Resposta: HTTP 201 OK
 
@@ -165,7 +165,7 @@ Exemplo:
 
 #### `[PUT]`/postos/atualizar/{id}
 
-Atualiza uma unidade-de-saude
+Atualiza uma unidade-de-saúde
 
 > Resposta: HTTP 200 OK
 
@@ -185,9 +185,9 @@ Atualiza uma unidade-de-saude
 
 Deleta uma unidade-de-saude
 
-> É necessário o ID da unidade-desaude
+> É necessário o id da unidade-de-saúde
 
-| Parametro | Descricao   |
+| Parâmetro | Descricão   |
 | --------- | ----------- |
 | id        | id do Posto |
 
@@ -232,9 +232,9 @@ Projeto-Final
 
 ```
 
-### Dependencias
+### Dependências
 
-| Dependencia | Versao |
+| Dependência | Versão |
 | ----------- | ------ |
 | NodeJs      | >= 14x |
 | NPM         | >= 8x  |
