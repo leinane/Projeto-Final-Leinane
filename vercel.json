@@ -1,4 +1,5 @@
 {
+    "version": 2,
     "bilds":[
         {
             "src": "src/app.js",
