@@ -31,10 +31,10 @@ const createPostos = async(req, res) =>{
 const getAll = async(req, res) =>{
     try {
         const postos = await postosSchema.find()
-        res.status(200).send(postos)
-        /*res.status(200).json({
+        //res.status(200).send(postos)
+        res.status(200).json({
             message:"Postos encontrados"
-        })*/
+        })
         
     } catch (err) {
         res.status(500).send({message:"err"})
