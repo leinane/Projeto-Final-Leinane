@@ -24,11 +24,15 @@ API foi desenvolvida utilizando a linguagem javaScript e Nodejs, utilizando o m�
 ao banco de dados MongoDB e testando as rotas rotas no insomnia.
 
 ### Funcionalidaes
+<body>
+<ol>
+<li>Listar todas as unidades de saúde públicas da cidade de Santo Antônio de Jeus;</li>
+<li>Listar o endereço, telefone e horários de atendimentos;</li>
+<li>Listar os atendimentos disponíveis nas unidades de saúde;</li>
+<li>Listar os Profissionais que atuam no local.</li>
+<ol>
+</body>
 
-▪️ Listar todas as unidades de saúde públicas da cidade de Santo Antônio de Jeus;
-▪️ Listar o endereço, telefone e horários de atendimentos;
-▪️ Listar os atendimentos disponíveis nas unidades de saúde;
-▪️ Listar os Profissionais que atuam no local.
 
 ### 📑 Documentação
 
