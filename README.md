@@ -273,8 +273,8 @@ Projeto-Final
 
 ### Implementações Futuras
 
-▪️ Desenvolver um front-ende;
-▪️ Implementar testes unitários;
-▪️ Implementar espaço para experiência do usuário.
+1. Desenvolver um front-ende;
+2. Implementar testes unitários;
+3. Implementar espaço para experiência do usuário.
 
 ### 👩🏾‍🦱 Sobre A Autora
