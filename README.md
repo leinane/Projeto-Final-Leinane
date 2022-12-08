@@ -34,7 +34,6 @@ ao banco de dados MongoDB e testando as rotas rotas no insomnia.
 </ol>
 </body>
 
-
 ### 📑 Documentação
 
 #### `[GET]`/postos/buscar
@@ -275,7 +274,7 @@ Projeto-Final
 
 1. Desenvolver um front-ende;
 2. criar um aplicativo para celular (sus conect), onde as pessoas terão acesso a informações das unidades de saúde
-de suas cidades. informações sobre os medicamentos que estão disponíveis nos posto, os atendimentos que serão realizados durante o mês, os medicos que estarão atuando no local, os horários dos atendimentos e os documentos necessarios para o atendimento. também constará com informações sobre o planejamento familiar, realizados no posto de saúde.
+   de suas cidades. informações sobre os medicamentos que estão disponíveis nos posto, os atendimentos que serão realizados durante o mês, os medicos que estarão atuando no local, os horários dos atendimentos e os documentos necessarios para o atendimento. também constará com informações sobre o planejamento familiar, realizados no posto de saúde.
 3. Implementar testes unitários;
 4. Implementar espaço para experiência do usuário.
 
