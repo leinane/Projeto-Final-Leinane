@@ -12,7 +12,7 @@ Turma Online 18 - Todas em Tech | back-end | Semana 18 | 2022 | Aluna: Leinane S
   <img src="./assets/hospital.gif">
 </div>
 
-Esse projeto tem como objetivo fazer o mapeamento das unidades de saúde da cidade de Santo Antônio de jesus, para que seja mais fácil o acesso da população a esses locais. Minha experiência como usuária ddestas unidades de saúde, trouxe a inquietação sobre a falta de informação que a população tem sobre essas unidades de saúde. Pois, para saber sobre os atendimentos disponíveis, medicamentos e os médicos que atuam no local, as pessoas têm que se dirigir até o posto de saúde, que em alguns casos, nem o telefone é divulgado para a população. A total falta de informação sobre esses postos, pode fazer com que algumas pessoas deixem de buscar pelos atendimentos disponíveis nesses locais. Com isso, o intuito do projeto, é deixar as informações sobre as unidades de saúde, da cidade de Saj, mais acessível para a população santoantoniense.
+Esse projeto tem como objetivo fazer o mapeamento das unidades de saúde da cidade de Santo Antônio de jesus, para que seja mais fácil o acesso da população a esses locais. Minha experiência como usuária ddestas unidades de saúde, trouxe a inquietação sobre a falta de informação que a população tem sobre essas unidades de saúde. Pois, para saber sobre os atendimentos disponíveis, medicamentos e os médicos que atuam no local, as pessoas têm que se dirigir até o posto de saúde, que em alguns casos, nem o telefone é divulgado para a população. A total falta de informação sobre esses postos, pode fazer com que algumas pessoas deixem de buscar pelos atendimentos disponíveis nesses locais. Com isso, o intuito do projeto, é deixar as informações sobre as unidades de saúde, da cidade de Saj, mais acessível para a população santo-antonienses.
 
 ### Sobre A API
 
@@ -71,7 +71,7 @@ Retorna todas unidades-de-saúde do banco de dados
 
 ---
 
-#### `[GET]`/postos/buscar/{id}
+#### `[GET]`/postos/buscar/:id
 
 Rota que retorna uma unidade-de-saúde do id indicado
 
@@ -181,7 +181,7 @@ Exemplo:
 
 ---
 
-#### `[PUT]`/postos/atualizar/{id}
+#### `[PUT]`/postos/atualizar/:id
 
 Atualiza uma unidade-de-saúde
 
@@ -199,9 +199,9 @@ Atualiza uma unidade-de-saúde
 
 ---
 
-#### `[DELETE]`/postos/deletar/ {id}
+#### `[DELETE]`/postos/deletar/:id
 
-Deleta uma unidade-de-saude
+Rota que Deleta uma unidade-de-saude
 
 > É necessário o id da unidade-de-saúde
 
@@ -272,7 +272,7 @@ Projeto-Final
 
 ### Implementações Futuras
 
-1. Desenvolver um front-ende;
+1. Desenvolver um front-end;
 2. criar um aplicativo para celular (sus conect), onde as pessoas terão acesso a informações das unidades de saúde
    de suas cidades. informações sobre os medicamentos que estão disponíveis nos posto, os atendimentos que serão realizados durante o mês, os medicos que estarão atuando no local, os horários dos atendimentos e os documentos necessarios para o atendimento. também constará com informações sobre o planejamento familiar, realizados no posto de saúde.
 3. Implementar testes unitários;
