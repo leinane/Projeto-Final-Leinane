@@ -6,7 +6,7 @@
 
 Turma Online 18 - Todas em Tech | back-end | Semana 18 | 2022 | Aluna: Leinane Santos da Conceição
 
-## USF SAJ: Mapeamento das Unidades de Saúde, da cidade de Santo Antônio de Jesus
+## SUS Conecte: Mapeamento das Unidades de Saúde, da cidade de Santo Antônio de Jesus
 
 <div align="center">
   <img src="./assets/hospital.gif">
@@ -16,7 +16,7 @@ Esse projeto tem como objetivo fazer o mapeamento das unidades de saúde da cida
 
 ### Sobre A API
 
-Neste projeto, foi desenvolvida uma API restful, que será conectada com o banco de dados mongobd, onde irá receber os dados das unidades de saúde, de seus funcionários, os atendimentos realizados no local e os horários de atendimento. Esses dados ficam salvos no banco de dados e poderão ser acessado pelos usuários destas unidades de saúde, de forma online, via página web, que será implementada futuramente.
+SUS Conecte, é um projeto que foi desenvolvido como requisito final para a conclusão do curso “Todas em Tech” da {Reprograma}. Neste projeto, foi desenvolvido uma API Rest, conectada ao banco de dados MongoBD, que recebe os dados das unidades de saúde, de sues funcionários, os atendimentos realizados no local e os horários de atendimentos. Esses dados são registrados no banco de dados e poderão ser acessados pelos usuários destas unidades de saúde, de forma online, via página web, que será implementada futuramente.
 
 ### Métodos
 
