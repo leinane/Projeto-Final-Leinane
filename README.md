@@ -12,7 +12,7 @@ Turma Online 18 - Todas em Tech | back-end | Semana 18 | 2022 | Aluna: Leinane S
   <img src="./assets/hospital.gif">
 </div>
 
-Esse projeto tem como objetivo fazer o mapeamento das unidades de saúde da cidade de Santo Antônio de jesus, para que seja mais fácil o acesso da população a esses locais. Minha experiência como usuária ddestas unidades de saúde, trouxe a inquietação sobre a falta de informação que a população tem sobre essas unidades de saúde. Pois, para saber sobre os atendimentos disponíveis, medicamentos e os médicos que atuam no local, as pessoas têm que se dirigir até o posto de saúde, que em alguns casos, nem o telefone é divulgado para a população. A total falta de informação sobre esses postos, pode fazer com que algumas pessoas deixem de buscar pelos atendimentos disponíveis nesses locais. Com isso, o intuito do projeto, é deixar as informações sobre as unidades de saúde, da cidade de Saj, mais acessível para a população santo-antonienses.
+Esse projeto tem como objetivo fazer o mapeamento das unidades de saúde da cidade de Santo Antônio de jesus, para que seja mais fácil o acesso da população a esses locais. Minha experiência como usuária destas unidades de saúde, trouxe a inquietação sobre a falta de informação que a população tem sobre essas unidades de saúde. Pois, para saber sobre os atendimentos disponíveis, medicamentos e os médicos que atuam no local, as pessoas têm que se dirigir até o posto de saúde, que em alguns casos, nem o telefone é divulgado para a população. A total falta de informação sobre esses postos, pode fazer com que algumas pessoas deixem de buscar pelos atendimentos disponíveis nesses locais. Com isso, o intuito do projeto, é deixar as informações sobre as unidades de saúde, da cidade de Saj, mais acessível para a população santo-antonienses.
 
 ### Sobre A API
 
@@ -21,7 +21,7 @@ SUS Conecte, é um projeto que foi desenvolvido como requisito final para a conc
 ### Métodos
 
 API foi desenvolvida utilizando a linguagem javaScript e Nodejs, utilizando o método CRUDS para fazer a requisições
-ao banco de dados MongoDB e testando as rotas rotas no insomnia.
+ao banco de dados MongoDB Atlas e testando as rotas rotas no insomnia.
 
 ### Funcionalidaes
 
@@ -40,7 +40,7 @@ ao banco de dados MongoDB e testando as rotas rotas no insomnia.
 
 Retorna todas unidades-de-saúde do banco de dados
 
-> Resposta: HTTP 200 OK
+> Resposta do Servidor: HTTP status 200 OK
 
 ```json
 [
@@ -81,7 +81,7 @@ Rota que retorna uma unidade-de-saúde do id indicado
 | --------- | ----------- |
 | id        | id do posto |
 
-> Resposta: HTTP 200 OK
+> Resposta do Servidor: HTTP status 200 OK
 
 ```json
 [
@@ -132,7 +132,7 @@ Rota que retorna uma unidade-de-saúde do id indicado
 
 Cadastra uma unidade-de-saúde
 
-> Resposta: HTTP 201 OK
+> Resposta do Servidor: status 201 OK
 
 Exemplo:
 
@@ -185,16 +185,16 @@ Exemplo:
 
 Atualiza uma unidade-de-saúde
 
-> Resposta: HTTP 200 OK
+> Resposta do Servidor: HTTP status 200 OK
 
 ```json
-[
+
   {
     "nome": " CentroSaj",
     "cnpj": "093546728",
     "telefone": "75936321256"
   }
-]
+
 ```
 
 ---
@@ -203,24 +203,81 @@ Atualiza uma unidade-de-saúde
 
 Rota que Deleta uma unidade-de-saude
 
-> É necessário o id da unidade-de-saúde
+# REQUERIDO
 
-| Parâmetro | Descricão   |
-| --------- | ----------- |
-| id        | id do Posto |
+| Parâmetro    |        Descricão        |
+| -------------| ----------------------- |
+| id           |      id do Posto        |
+|Baerer Token  | Tokem para autenticação |
 
-> Resposta: HTTP 204 NO CONTENT
+> Resposta do Servidor: HTTP status 204 NO CONTENT
 
 ```json
 {}
 ```
+### Autenticação do Usuário
+---
+#### `[POST AUTH]` /user/criar
+ Rota que cria um usuário 
+
+ ---
+ # REQUERIDO
+
+ *BODY
+
+```json
+
+{
+	"name":"Urbis3",
+	"email":"www.usfUrbis.com",
+	"password":"*****"
+	
+}
+```
+> Resposta do Servidor: HTTP status 201 Ok
+
+```json
+{
+	"message": "Seu cadastro foi criado com sucesso",
+	"salvarUsuario": {
+		"name": "Urbis3",
+		"email": "www.usfUrbis.com",
+		"password": "$2b$10$XHzVvS9vYp21w6kumcAU4.NA5Dtlotdw.aPBgQIsH6x8fzcaK5tQa",
+		"createdAt": "2022-12-15T14:53:28.502Z",
+		"_id": "639b3c15956d771e8f48b617",
+		"__v": 0
+	}
+}
+
+```
+#### `[POST AUTH]` /user/criar
+Rota para fazer login
+
+```json
+{
+	
+	"email":"www.usfUrbis3.com",
+	"password":"*****"
+	
+}
+```
+> Resposta do Servidor: HTTP status 200 Ok
+
+```json
+{
+	"message": "Você está logadah!",
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9."
+}
+
+```
+
 
 ---
 
 ### Arquitetura do projeto - MVC
 
 ```
-Projeto-Final
+MVC
 📂 API
 ├─ 📂 src
 │  ├─ 📂 controllers
@@ -272,10 +329,10 @@ Projeto-Final
 
 ### Implementações Futuras
 
-1. Desenvolver um front-end;
-2. criar um aplicativo para celular (sus conect), onde as pessoas terão acesso a informações das unidades de saúde
-   de suas cidades. informações sobre os medicamentos que estão disponíveis nos posto, os atendimentos que serão realizados durante o mês, os medicos que estarão atuando no local, os horários dos atendimentos e os documentos necessarios para o atendimento. também constará com informações sobre o planejamento familiar, realizados no posto de saúde.
+1. Desenvolver o front-end;
+2. criar um aplicativo para celular (sus conecte), onde as pessoas terão acesso a informações das unidades de saúde
+   de suas cidades. Informações sobre os medicamentos que estão disponíveis nas farmácias das unidades de saúde, os atendimentos que serão realizados durante o mês, os médicos que atuarão no local, os horários de atendimentos e os documentos necessários para o atendimento. também constará com informações sobre o planejamento familiar, realizados nas unidades de saúde.
 3. Implementar testes unitários;
 4. Implementar espaço para experiência do usuário.
 
-### 👩🏾‍🦱 Sobre A Autora
+
