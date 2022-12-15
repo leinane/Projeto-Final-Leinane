@@ -141,6 +141,12 @@ Rota que retorna uma unidade-de-saúde do id indicado
 
 Cadastra uma unidade-de-saúde
 
+Requerido
+
+| Parâmetro    |        Descricão        |
+| -------------| ----------------------- |
+|Baerer Token  | Tokem para autenticação |
+
 > Resposta do Servidor:  HTTP status 201 OK
 
 Exemplo:
@@ -194,6 +200,14 @@ Exemplo:
 
 Atualiza uma unidade-de-saúde
 
+Requerido
+
+| Parâmetro    |        Descricão        |
+| -------------| ----------------------- |
+| id           |      id do Posto        |
+|Baerer Token  | Tokem para autenticação |
+
+
 > Resposta do Servidor: HTTP status 200 OK
 
 ```json
@@ -227,7 +241,7 @@ Rota que Deleta uma unidade-de-saude
 ---
 ### Autenticação do Usuário
 ---
-#### `[POST AUTH]` /user/criar
+#### `[POST]` /user/criar
 
  > Rota que cria um usuário 
  
@@ -261,7 +275,7 @@ Rota que Deleta uma unidade-de-saude
 
 ```
 ---
-#### `[POST AUTH]` /user/criar
+#### `[POST AUTH]` /user/login
 Rota para fazer login
 
 ```json
