@@ -12,16 +12,23 @@ Turma Online 18 - Todas em Tech | back-end | Semana 18 | 2022 | Aluna: Leinane S
   <img src="./assets/hospital.gif">
 </div>
 
+---
 Esse projeto tem como objetivo fazer o mapeamento das unidades de saúde da cidade de Santo Antônio de jesus, para que seja mais fácil o acesso da população a esses locais. Minha experiência como usuária destas unidades de saúde, trouxe a inquietação sobre a falta de informação que a população tem sobre essas unidades de saúde. Pois, para saber sobre os atendimentos disponíveis, medicamentos e os médicos que atuam no local, as pessoas têm que se dirigir até o posto de saúde, que em alguns casos, nem o telefone é divulgado para a população. A total falta de informação sobre esses postos, pode fazer com que algumas pessoas deixem de buscar pelos atendimentos disponíveis nesses locais. Com isso, o intuito do projeto, é deixar as informações sobre as unidades de saúde, da cidade de Saj, mais acessível para a população santo-antonienses.
+
+---
 
 ### Sobre A API
 
 SUS Conecte, é um projeto que foi desenvolvido como requisito final para a conclusão do curso “Todas em Tech” da {Reprograma}. Neste projeto, foi desenvolvido uma API Rest, conectada ao banco de dados MongoBD, que recebe os dados das unidades de saúde, de sues funcionários, os atendimentos realizados no local e os horários de atendimentos. Esses dados são registrados no banco de dados e poderão ser acessados pelos usuários destas unidades de saúde, de forma online, via página web, que será implementada futuramente.
 
+---
+
 ### Métodos
 
 API foi desenvolvida utilizando a linguagem javaScript e Nodejs, utilizando o método CRUDS para fazer a requisições
 ao banco de dados MongoDB Atlas e testando as rotas rotas no insomnia.
+
+---
 
 ### Funcionalidaes
 
@@ -33,8 +40,10 @@ ao banco de dados MongoDB Atlas e testando as rotas rotas no insomnia.
 <li>Listar os Profissionais que atuam no local.</li>
 </ol>
 </body>
+---
 
 ### 📑 Documentação
+---
 
 #### `[GET]`/postos/buscar
 
@@ -215,15 +224,16 @@ Rota que Deleta uma unidade-de-saude
 ```json
 {}
 ```
+---
 ### Autenticação do Usuário
 ---
 #### `[POST AUTH]` /user/criar
  Rota que cria um usuário 
 
  ---
- # REQUERIDO
+ ### REQUERIDO
 
- *BODY
+ Body
 
 ```json
 
@@ -250,6 +260,7 @@ Rota que Deleta uma unidade-de-saude
 }
 
 ```
+---
 #### `[POST AUTH]` /user/criar
 Rota para fazer login
 
@@ -306,6 +317,7 @@ MVC
 └─ server.js
 
 ```
+---
 
 ### Tecnologias utilizadas
 
@@ -318,6 +330,8 @@ MVC
 | Insomnia               |
 | VScode                 |
 
+---
+
 ### Dependências
 
 | Dependência | Versão |
@@ -327,6 +341,8 @@ MVC
 | Nodemon     | -      |
 | Cors        | -      |
 
+---
+
 ### Implementações Futuras
 
 1. Desenvolver o front-end;
@@ -334,5 +350,7 @@ MVC
    de suas cidades. Informações sobre os medicamentos que estão disponíveis nas farmácias das unidades de saúde, os atendimentos que serão realizados durante o mês, os médicos que atuarão no local, os horários de atendimentos e os documentos necessários para o atendimento. também constará com informações sobre o planejamento familiar, realizados nas unidades de saúde.
 3. Implementar testes unitários;
 4. Implementar espaço para experiência do usuário.
+
+---
 
 
