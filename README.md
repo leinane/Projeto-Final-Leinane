@@ -275,7 +275,7 @@ Rota que Deleta uma unidade-de-saude
 
 ```
 ---
-#### `[POST AUTH]` /user/login
+#### `[POST]` /user/login
 Rota para fazer login
 
 ```json
