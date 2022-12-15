@@ -40,7 +40,7 @@ ao banco de dados MongoDB Atlas e testando as rotas rotas no insomnia.
 <li>Listar os Profissionais que atuam no local.</li>
 </ol>
 </body>
----
+
 
 ### 📑 Documentação
 ---
@@ -141,7 +141,7 @@ Rota que retorna uma unidade-de-saúde do id indicado
 
 Cadastra uma unidade-de-saúde
 
-> Resposta do Servidor: status 201 OK
+> Resposta do Servidor:  HTTP status 201 OK
 
 Exemplo:
 
@@ -212,7 +212,7 @@ Atualiza uma unidade-de-saúde
 
 Rota que Deleta uma unidade-de-saude
 
-# REQUERIDO
+ Requerido
 
 | Parâmetro    |        Descricão        |
 | -------------| ----------------------- |
@@ -228,12 +228,12 @@ Rota que Deleta uma unidade-de-saude
 ### Autenticação do Usuário
 ---
 #### `[POST AUTH]` /user/criar
- Rota que cria um usuário 
 
- ---
- ### REQUERIDO
+ > Rota que cria um usuário 
+ 
+ > Requerido
 
- Body
+ Body: 
 
 ```json
 
